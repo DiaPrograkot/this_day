@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+    <link rel="stylesheet" href="0804.css">
+</head>
+<body>
+    <form id="form">
+        <label>Введите имя:
+        <input type="text" name="name" id="userName">
+    </label>
+        <!-- <br> -->
+        <label>Введите почту:
+        <input type="email" name="email" id="email">
+    </label>
+        <label>Введите пароль:
+        <input type="password" name="password" id="password">
+    </label>
+        <label for="age" id="age-cont">Выберите свой возраст:</label>
+        <select name="age" id="age" required>
+            <option value="b18">0-18</option>
+            <option value="b25">19-25</option>
+            <option value="b40">26-40</option>
+            <option value="a40">41-100</option>
+        </select>
+        <label>
+            <input type="checkbox" name="condition1" value="termsOfUse" id="termsOfUse">
+            Согласие с <a href="/*">условиями пользования</a>
+        </label>
+        <label>
+            <input type="checkbox" name="condition2" id="advertisement">
+            Согласие на рекламу
+        </label>
+        <button type="submit">Отправить</button>
+    </form>
+    <script src="0804.js"></script>
+</body>
+</html>
